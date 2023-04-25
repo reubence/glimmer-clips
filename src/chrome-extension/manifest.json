@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Saver",
+  "version": "1.0",
+  "description": "Save highlights from websites using Cmd+Ctrl+S",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["src/content_scripts/content_script.js"],
+      "css": ["src/content_scripts/highlight.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  }
+}

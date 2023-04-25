@@ -1,0 +1,9 @@
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.saved-highlight {
+  background-color: yellow;
+  border-radius: 3px;
+}

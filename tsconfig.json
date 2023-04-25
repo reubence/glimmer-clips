@@ -18,6 +18,12 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/chrome-extension/src/content_scripts/content_script.js",
+    "src/chrome-extension/src/background.js"
+  ],
   "exclude": ["node_modules"]
 }
